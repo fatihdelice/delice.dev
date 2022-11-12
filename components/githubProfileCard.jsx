@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 const GithubProfileCard = ({
   image,
@@ -24,7 +24,10 @@ const GithubProfileCard = ({
         src={image}
         width={100}
         height={100}
-      />
+        style={{
+          maxWidth: "100%",
+          height: "auto"
+        }} />
       <div className="z-1 relative">
         <h1 className="font-semibold text-2xl leading-none">{name}</h1>
         <p className="opacity-50 text-sm">{username}</p>

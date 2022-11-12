@@ -22,7 +22,6 @@ const Projects = () => {
                     loading="eager"
                     className="rounded-xl transition-all  border"
                     style={{ border: "1px solid #eaeaea" }}
-                    objectFit="cover"
                     alt={project.title}
                   />
                   <div className="absolute flex space-x-3 opacity-0  transition-opacity group-hover:opacity-100 bottom-4 left-2">
