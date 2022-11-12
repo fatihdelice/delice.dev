@@ -143,7 +143,7 @@ export const components = {
 
     return (
       <NextLink href={href} passHref>
-       {...props}
+        <a {...props} />
       </NextLink>
     );
   },

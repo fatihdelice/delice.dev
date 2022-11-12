@@ -24,10 +24,7 @@ const GithubProfileCard = ({
         src={image}
         width={100}
         height={100}
-        style={{
-          maxWidth: "100%",
-          height: "auto"
-        }} />
+      />
       <div className="z-1 relative">
         <h1 className="font-semibold text-2xl leading-none">{name}</h1>
         <p className="opacity-50 text-sm">{username}</p>
@@ -41,9 +38,11 @@ const GithubProfileCard = ({
           </p>
         </div>
         <Link href={url}>
-          <p className="bg-blue-200 text-blue-900  hover:scale-[1.02] hover:shadow-md hover:shadow-orange-100/30 transition-all text-center p-3 mt-4 rounded-xl">
-            <span className="font-bold">{repos}</span> Public Repos
-          </p>
+          <a>
+            <p className="bg-blue-200 text-blue-900  hover:scale-[1.02] hover:shadow-md hover:shadow-orange-100/30 transition-all text-center p-3 mt-4 rounded-xl">
+              <span className="font-bold">{repos}</span> Public Repos
+            </p>
+          </a>
         </Link>
 
         {/* <p>{user.hireable ? "hireable" : "injob"}</p> */}

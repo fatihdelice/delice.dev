@@ -22,32 +22,39 @@ const Projects = () => {
                     loading="eager"
                     className="rounded-xl transition-all  border"
                     style={{ border: "1px solid #eaeaea" }}
+                    objectFit="cover"
                     alt={project.title}
                   />
                   <div className="absolute flex space-x-3 opacity-0  transition-opacity group-hover:opacity-100 bottom-4 left-2">
-                    <Link href={project.link}
-                      className={classNames(
-                        " inline shadow bg-white rounded-2xl overflow-hidden p-3",
-                        "hover:bg-neutral-200   transition-all"
-                      )}
-                    >
-                      <HiCode size={19} color="black" />
+                    <Link href={project.link}>
+                      <a
+                        className={classNames(
+                          " inline shadow bg-white rounded-2xl overflow-hidden p-3",
+                          "hover:bg-neutral-200   transition-all"
+                        )}
+                      >
+                        <HiCode size={19} color="black" />
+                      </a>
                     </Link>
-                    <Link href={project.live}
-                      className={classNames(
-                        " inline shadow bg-white rounded-2xl overflow-hidden p-3",
-                        "hover:bg-neutral-100 transition-all"
-                      )}
-                    >
-                      <HiOutlineExternalLink size={19} color="black" />
+                    <Link href={project.live}>
+                      <a
+                        className={classNames(
+                          " inline shadow bg-white rounded-2xl overflow-hidden p-3",
+                          "hover:bg-neutral-100 transition-all"
+                        )}
+                      >
+                        <HiOutlineExternalLink size={19} color="black" />
+                      </a>
                     </Link>
                   </div>
                 </div>
                 <div>
                   <Link href={project.live}>
-                    <p className="text-lg hover:ml-1  transition-all font-bold mb-2">
-                      {project.name}
-                    </p>
+                    <a>
+                      <p className="text-lg hover:ml-1  transition-all font-bold mb-2">
+                        {project.name}
+                      </p>
+                    </a>
                   </Link>
 
                   <p className="text-neutral-600 dark:text-white/80">

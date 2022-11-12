@@ -102,14 +102,16 @@ const Projects = ({ user, repos }) => {
                 {index + 1}
               </div>
               <Link href={repo.html_url}>
-                <span className="inline-block">
-                  {repo.fork ? (
-                    <TbGitFork className="inline" color="gray" />
-                  ) : (
-                    ""
-                  )}
-                </span>
-                <h2 className="font-medium inline">{repo.name}</h2>{" "}
+                <a>
+                  <span className="inline-block">
+                    {repo.fork ? (
+                      <TbGitFork className="inline" color="gray" />
+                    ) : (
+                      ""
+                    )}
+                  </span>
+                  <h2 className="font-medium inline">{repo.name}</h2>{" "}
+                </a>
               </Link>
               <p className="opacity-70">
                 {repo.description || "no description"}{" "}

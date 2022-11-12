@@ -1,5 +1,5 @@
 import cx from "clsx";
-import NextImage from "next/image";
+import NextImage from "next/future/image";
 import { useState } from "react";
 
 export const BlurImage = (props) => {

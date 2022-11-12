@@ -49,17 +49,17 @@ const Home = () => {
         <p>
           Outside of programming, I enjoy doing photography and traveling. Some
           of my photos can be found on{" "}
-          <Link href="https://www.instagram.com/isuraka/" className="cursor-ne-resize  font-bold ">
-            Instagram.
+          <Link href="https://www.instagram.com/isuraka/">
+            <a className="cursor-ne-resize  font-bold ">Instagram.</a>
           </Link>
         </p>
         <p>
           Find me on{" "}
-          <Link href="https://github.com/imhalid" className="cursor-ne-resize  font-bold ">
-            GitHub, 
+          <Link href="https://github.com/imhalid">
+            <a className=" cursor-ne-resize  font-bold  ">GitHub, </a>
           </Link>{" "}
-          <Link href="https://twitter.com/halidislm" className="cursor-ne-resize  font-bold ">
-            Twitter.
+          <Link href="https://twitter.com/halidislm">
+            <a className=" cursor-ne-resize  font-bold">Twitter.</a>
           </Link>
         </p>
         <p>
@@ -67,13 +67,16 @@ const Home = () => {
           Javascript, dealing with designs. Looking for a job where I can
           improve myself. If you want to teach me or
         </p>
-        <Link href="mailto:hi@halid.dev"
+        <Link href="mailto:hi@halid.dev">
+          <a
             className={classNames(
               "px-3 py-2 bg-blue-500 inline-block text-white inset-x-6 font-bold my-3",
               "rounded-lg hover:shadow-md hover:shadow-blue-400/50 ease-in-out hover:translate-x-1 transition-all hover:-rotate-1",
               "dark:bg-blue-600 dark:hover:bg-blue-600/90 dark:hover:shadow-blue-400/10"
-            )}>
+            )}
+          >
             <span>[HIRE ME]</span>
+          </a>
         </Link>
       </article>
       <style jsx>{`
