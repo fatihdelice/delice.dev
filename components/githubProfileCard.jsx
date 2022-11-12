@@ -38,11 +38,11 @@ const GithubProfileCard = ({
           </p>
         </div>
         <Link href={url}>
-          <a>
-            <p className="bg-blue-200 text-blue-900  hover:scale-[1.02] hover:shadow-md hover:shadow-orange-100/30 transition-all text-center p-3 mt-4 rounded-xl">
-              <span className="font-bold">{repos}</span> Public Repos
-            </p>
-          </a>
+
+          <p className="bg-blue-200 text-blue-900  hover:scale-[1.02] hover:shadow-md hover:shadow-orange-100/30 transition-all text-center p-3 mt-4 rounded-xl">
+            <span className="font-bold">{repos}</span> Public Repos
+          </p>
+
         </Link>
 
         {/* <p>{user.hireable ? "hireable" : "injob"}</p> */}
