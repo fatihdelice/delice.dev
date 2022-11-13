@@ -7,7 +7,7 @@ import { HiOutlineExternalLink, HiCode } from "react-icons/hi";
 const Projects = () => {
   return (
     <div className="mt-6 pt-6 dark:border-white/30  border-t">
-      <h1 className="titles">Projects</h1>
+      <h1 className="titles">Mobile Apps</h1>
       <div className="grid center grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 md:gap-10">
         {projects.map((project, index) => {
           return (
@@ -20,14 +20,14 @@ const Projects = () => {
                     quality={100}
                     height={300}
                     loading="eager"
-                    className="rounded-xl transition-all  border"
+                    className="rounded-xl transition-all  border object-cover"
                     style={{ border: "1px solid #eaeaea" }}
-                    objectFit="cover"
                     alt={project.title}
                   />
                   <div className="absolute flex space-x-3 opacity-0  transition-opacity group-hover:opacity-100 bottom-4 left-2">
-                    <Link
+                    {project.link && <a
                       href={project.link}
+                      target="_blank"
                       className={classNames(
                         " inline shadow bg-white rounded-2xl overflow-hidden p-3",
                         "hover:bg-neutral-200   transition-all"
@@ -35,9 +35,10 @@ const Projects = () => {
 
                       <HiCode size={19} color="black" />
 
-                    </Link>
-                    <Link
+                    </a>}
+                    {project.live && <a
                       href={project.live}
+                      target="_blank"
                       className={classNames(
                         " inline shadow bg-white rounded-2xl overflow-hidden p-3",
                         "hover:bg-neutral-100 transition-all"
@@ -45,17 +46,17 @@ const Projects = () => {
 
                       <HiOutlineExternalLink size={19} color="black" />
 
-                    </Link>
+                    </a>}
                   </div>
                 </div>
                 <div>
-                  <Link href={project.live}>
+                  <a href={project.live} target="_blank">
 
-                    <p className="text-lg hover:ml-1  transition-all font-bold mb-2">
+                    <p className="text-lg hover:ml-1 mt-1 transition-all font-bold mb-2">
                       {project.name}
                     </p>
 
-                  </Link>
+                  </a>
 
                   <p className="text-neutral-600 dark:text-white/80">
                     {project.description}
@@ -66,8 +67,8 @@ const Projects = () => {
                         <p
                           className={classNames(
                             "mr-1 my-2 px-2 py-1 rounded text-xs font-bold",
-                            "bg-blue-300/50 text-blue-900",
-                            "dark:bg-blue-800/20 dark:text-blue-500"
+                            "bg-yellow-300/50 text-yellow-900",
+                            "dark:bg-yellow-800/20 dark:text-yellow-500"
                           )}
                           key={index}
                         >

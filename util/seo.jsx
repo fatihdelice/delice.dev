@@ -1,27 +1,17 @@
-import { createOgImage } from "./createOgImage";
-
-const title = `Halid`;
-const description = `Halit is a front-end developer who specializes in building web applications.`;
-const domain = `halit.dev`;
-const twitter = `@halidislm`;
-const meta = `Front-end Developer`;
+const title = `Fatih Delice`;
+const description = `Fatih Delice; Computer Engineer — Developer, Creator, Writer.`;
+const domain = `delice.dev`;
+const twitter = `@fatihdew`;
+const meta = `Computer Engineer, developer, creator`;
 
 export const seo = {
-  title: title + " | " + meta,
+  title: title + " — " + meta,
   description,
   openGraph: {
     title,
     type: "website",
     url: `https://${domain}`,
     site_name: title,
-    images: [
-      {
-        url: createOgImage({ title, meta }),
-        width: 1600,
-        height: 836,
-        alt: title,
-      },
-    ],
   },
   twitter: {
     handle: twitter,

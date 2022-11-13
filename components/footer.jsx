@@ -23,16 +23,16 @@ const footer = () => {
     >
       <div className="">
         Build with{" "}
-        <Link href="https://nextjs.org/" className="link">
+        <a href="https://nextjs.org/" target="_blank" className="link">
           Next.Js,
-        </Link>{" "}
-        <Link href="https://tailwindcss.com/" className="link">
+        </a>{" "}
+        <a href="https://tailwindcss.com/" target="_blank" className="link">
           Tailwind CSS
-        </Link>{" "}
+        </a>{" "}
         and{" "}
-        <Link href="https://tailwindcss.com/" className="link">
+        <a href="https://tailwindcss.com/" target="_blank" className="link">
           Vercel
-        </Link>{" "}
+        </a>{" "}
       </div>
       <div className="font-bold">
         Locale: {min} {fullTime}

@@ -13,8 +13,8 @@ export default function Document() {
       </Head>
       <body
         className="dark:bg-neutral-900 bg-neutral-100 h-screen
-       selection:bg-blue-100/30 selection:text-blue-500
-       dark:selection:bg-blue-300/10 dark:selection:text-blue-400
+       selection:bg-yellow-100/30 selection:text-yellow-500
+       dark:selection:bg-yellow-300/10 dark:selection:text-yellow-400
        "
       >
         <svg

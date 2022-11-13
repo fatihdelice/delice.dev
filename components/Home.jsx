@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="mt-10">
       <div className="flex items-center ">
-        <svg
+        {/* <svg
           width="58"
           height="64"
           viewBox="0 0 58 64"
@@ -32,47 +32,38 @@ const Home = () => {
               <stop offset="1" stopColor="#5AC9D8" />
             </radialGradient>
           </defs>
-        </svg>
+        </svg> */}
 
-        <div className="flex pl-3 flex-col">
-          <h1 className="text-3xl  font-bold">Halid</h1>
-          <h4 className="opacity-50">Front-end Developer</h4>
+        <div className="flex flex-col">
+          <h1 className="text-3xl  font-bold">Fatih Delice</h1>
+          <h4 className="opacity-50">Computer Engineer — Developer, Creator, Writer</h4>
         </div>
       </div>
       <article className="mt-10">
         <p>
-          Developer and designer making products that feel 'right' and faster.
-          Focused on creating fluid and accessible interfaces. Interested in 3D
-          modeling.
-        </p>
-
-        <p>
-          Outside of programming, I enjoy doing photography and traveling. Some
-          of my photos can be found on{" "}
-          <Link href="https://www.instagram.com/isuraka/">
-            <a className="cursor-ne-resize  font-bold ">Instagram.</a>
-          </Link>
+          Hey, I'm Fatih! I am a Computer Engineer, Developer, Creator. I love everything that include visuality and aesthetic. I am developing interfaces with popular technologies for mobile and web applications. Proficient in HTML, CSS, JavaScript; plus modern libraries and frameworks (React.js, React-Native, Next.js, Tailwind, SASS...). Possess working knowledge of Adobe Photoshop, Figma, Illustrator, Premiere.
         </p>
         <p>
           Find me on{" "}
-          <Link href="https://github.com/imhalid">
-            <a className=" cursor-ne-resize  font-bold  ">GitHub, </a>
+          <Link href="https://twitter.com/fatihdew">
+            <a target="_blank" className=" cursor-ne-resize  font-bold">Twitter,</a>
           </Link>{" "}
-          <Link href="https://twitter.com/halidislm">
-            <a className=" cursor-ne-resize  font-bold">Twitter.</a>
+          <Link href="https://github.com/fatihdelice">
+            <a target="_blank" className=" cursor-ne-resize  font-bold  ">GitHub, </a>
+          </Link>{" "}
+          <Link href="https://www.linkedin.com/in/fatih-delice-5726791a2/">
+            <a target="_blank" className=" cursor-ne-resize  font-bold">LinkedIn,</a>
+          </Link>{" "}
+          <Link href="https://www.youtube.com/@fatihdev">
+            <a target="_blank" className=" cursor-ne-resize  font-bold">YouTube.</a>
           </Link>
         </p>
-        <p>
-          I'm focused on Next.js right now. I love writing CSS and pure
-          Javascript, dealing with designs. Looking for a job where I can
-          improve myself. If you want to teach me or
-        </p>
-        <Link href="mailto:hi@halid.dev">
+        <Link href="mailto:delicex58@gmail.com">
           <a
             className={classNames(
-              "px-3 py-2 bg-blue-500 inline-block text-white inset-x-6 font-bold my-3",
-              "rounded-lg hover:shadow-md hover:shadow-blue-400/50 ease-in-out hover:translate-x-1 transition-all hover:-rotate-1",
-              "dark:bg-blue-600 dark:hover:bg-blue-600/90 dark:hover:shadow-blue-400/10"
+              "px-3 py-2 bg-yellow-500 inline-block text-white inset-x-6 font-bold my-3",
+              "rounded-lg hover:shadow-md hover:shadow-yellow-400/50 ease-in-out hover:translate-x-1 transition-all hover:-rotate-1",
+              "dark:bg-yellow-600 dark:hover:bg-yellow-600/90 dark:hover:shadow-yellow-400/10"
             )}
           >
             <span>[HIRE ME]</span>
@@ -82,7 +73,7 @@ const Home = () => {
       <style jsx>{`
         p {
           margin-top: 20px;
-          line-height: 1.8;
+          line-height: 1.4;
           font-size: 1.1rem;
         }
       `}</style>

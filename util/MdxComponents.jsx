@@ -64,8 +64,8 @@ export const components = {
     <hr
       {...props}
       className={classNames(
-        "my-6 border-t-2 border-blue-500/30",
-        "dark:border-blue-400/30"
+        "my-6 border-t-2 border-yellow-500/30",
+        "dark:border-yellow-400/30"
       )}
     />
   ),
@@ -103,8 +103,8 @@ export const components = {
   th: (props) => (
     <th
       className={classNames(
-        "bg-blue-500 text-white first:pl-4 shadow py-1 align-middle text-left",
-        "dark:bg-blue-600/50"
+        "bg-yellow-500 text-white first:pl-4 shadow py-1 align-middle text-left",
+        "dark:bg-yellow-600/50"
       )}
       {...props}
     />

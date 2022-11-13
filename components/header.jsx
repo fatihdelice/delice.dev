@@ -27,18 +27,13 @@ const Nav = () => {
       <ul className={classNames("inline-flex list-none font-bold ml-auto")}>
         <li></li>
         <li>
-          <Link href="/blog">
-            <a className="headerHover">Blog</a>
+          <Link href="https://fatihdelice.medium.com/">
+            <a target="_blank" className="headerHover mr-2">Blog</a>
           </Link>
         </li>
         <li>
           <Link href="/projects">
-            <a className="headerHover">Projects</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/snippets">
-            <a className="headerHover mr-6">Snippets</a>
+            <a className="headerHover mr-2">Projects</a>
           </Link>
         </li>
         <li>
