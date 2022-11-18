@@ -18,17 +18,6 @@ const projects = [
     link: "",
     live: "https://play.google.com/store/apps/details?id=com.mobiroller.mobi408693277272",
     tags: ["React Native", "Firebase"],
-  },
-
-  {
-    id: 2,
-    name: "Wallsdrobe App",
-    description: 
-      "Wallsdrobe offers you the best background wallpapers for free.",
-    image: "/projects/wallsdrobe.png",
-    link: "",
-    live: "https://play.google.com/store/apps/details?id=com.yigidosoft.wallsdrobe",
-    tags: ["React Native", "Firebase"],
   },  
 ];
 
