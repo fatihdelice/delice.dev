@@ -67,8 +67,8 @@ const Projects = () => {
                         <p
                           className={classNames(
                             "mr-1 my-2 px-2 py-1 rounded text-xs font-bold",
-                            "bg-yellow-300/50 text-yellow-900",
-                            "dark:bg-yellow-800/20 dark:text-yellow-500"
+                            "bg-red-300/50 text-red-900",
+                            "dark:bg-red-800/20 dark:text-red-500"
                           )}
                           key={index}
                         >

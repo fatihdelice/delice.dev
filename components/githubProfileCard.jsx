@@ -39,7 +39,7 @@ const GithubProfileCard = ({
         </div>
         <Link href={url}>
 
-          <p className="bg-yellow-200 text-yellow-900  hover:scale-[1.02] hover:shadow-md hover:shadow-orange-100/30 transition-all text-center p-3 mt-4 rounded-xl">
+          <p className="bg-red-200 text-red-900  hover:scale-[1.02] hover:shadow-md hover:shadow-orange-100/30 transition-all text-center p-3 mt-4 rounded-xl">
             <span className="font-bold">{repos}</span> Public Repos
           </p>
 

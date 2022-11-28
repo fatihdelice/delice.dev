@@ -61,9 +61,9 @@ const Home = () => {
         <Link href="mailto:delicex58@gmail.com">
           <a
             className={classNames(
-              "px-3 py-2 bg-yellow-500 inline-block text-white inset-x-6 font-bold my-3",
-              "rounded-lg hover:shadow-md hover:shadow-yellow-400/50 ease-in-out hover:translate-x-1 transition-all hover:-rotate-1",
-              "dark:bg-yellow-600 dark:hover:bg-yellow-600/90 dark:hover:shadow-yellow-400/10"
+              "px-3 py-2 bg-red-500 inline-block text-white inset-x-6 font-bold my-3",
+              "rounded-lg hover:shadow-md hover:shadow-red-400/50 ease-in-out hover:translate-x-1 transition-all hover:-rotate-1",
+              "dark:bg-red-600 dark:hover:bg-red-600/90 dark:hover:shadow-red-400/10"
             )}
           >
             <span>[HIRE ME]</span>

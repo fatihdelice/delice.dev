@@ -80,7 +80,7 @@ const Projects = ({ user, repos }) => {
             className="text-center cursor-pointer"
             onClick={() => setSort(!sort)}
           >
-            <p className=" bg-yellow-100 dark:bg-zinc-900/70 border  dark:border-neutral-700/50 border-neutral-400/20 py-2 rounded-md">
+            <p className=" bg-red-100 dark:bg-zinc-900/70 border  dark:border-neutral-700/50 border-neutral-400/20 py-2 rounded-md">
               {sort ? "Sort by star" : "Sort by date"}{" "}
               <FaSort className="inline" />
             </p>
@@ -88,14 +88,14 @@ const Projects = ({ user, repos }) => {
           {repos.map((repo, index) => (
             <div
               className={cx("repoCard group break-inside-avoid", {
-                "bg-yellow-100/30 dark:bg-zinc-400/10": repo.fork,
+                "bg-red-100/30 dark:bg-zinc-400/10": repo.fork,
                 "bg-[#FCFCFC] dark:bg-zinc-900/70": !repo.fork,
               })}
               key={repo.id}
             >
               <div
                 className={classNames(
-                  "absolute  flex   items-center font-bold text-sm rounded-tl-[4px] rounded-bl-[4px] text-white justify-center bg-yellow-500 w-5 h-5 top-3 -right-5",
+                  "absolute  flex   items-center font-bold text-sm rounded-tl-[4px] rounded-bl-[4px] text-white justify-center bg-red-500 w-5 h-5 top-3 -right-5",
                   "group-hover:right-0 transition-all"
                 )}
               >

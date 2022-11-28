@@ -17,8 +17,8 @@ const ThemeChange = () => {
       return (
         <button
           className="bg-neutral-200 text-neutral-900 p-1 rounded
-          ring-opacity-0 hover:ring-opacity-100 hover:ring-[3px] ring-yellow-500 
-          hover:drop-shadow-[0_0px_20px_rgb(236,201,75)] transition-all "
+          ring-opacity-0 hover:ring-opacity-100 hover:ring-[3px] ring-red-500 
+          hover:drop-shadow-[0_0px_20px_rgb(222,45,45)] transition-all "
           onClick={() => setTheme("light")}
         >
           <BiMoon />
@@ -28,8 +28,8 @@ const ThemeChange = () => {
       return (
         <button
           className="bg-neutral-700 text-neutral-100 p-1 rounded 
-          ring-opacity-0 hover:ring-opacity-100 hover:ring-[3px] ring-yellow-500 
-          hover:drop-shadow-[0_0px_20px_rgb(236,201,75)] transition-all "
+          ring-opacity-0 hover:ring-opacity-100 hover:ring-[3px] ring-red-500 
+          hover:drop-shadow-[0_0px_20px_rgb(222,45,45)] transition-all "
           onClick={() => setTheme("dark")}
         >
           <BiSun />
