@@ -7,7 +7,7 @@ import { HiOutlineExternalLink, HiCode } from "react-icons/hi";
 const Projects = () => {
   return (
     <div className="mt-6 pt-6 dark:border-white/30  border-t">
-      <h1 className="titles">Mobile Apps</h1>
+      <h1 className="titles">Projects</h1>
       <div className="grid center grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 md:gap-10">
         {projects.map((project, index) => {
           return (
