@@ -45,7 +45,7 @@ const Home = () => {
         </p>
         <p>
           Find me on{" "}
-          <Link href="https://twitter.com/fatihdew">
+          <Link href="https://twitter.com/fatihdelice_">
             <a target="_blank" className=" cursor-ne-resize  font-bold">Twitter,</a>
           </Link>{" "}
           <Link href="https://github.com/fatihdelice">
