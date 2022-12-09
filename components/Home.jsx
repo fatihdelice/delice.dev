@@ -54,7 +54,7 @@ const Home = () => {
           <Link href="https://www.linkedin.com/in/fatihdelice/">
             <a target="_blank" className=" cursor-ne-resize  font-bold">LinkedIn,</a>
           </Link>{" "}
-          <Link href="https://www.youtube.com/@fatihdev">
+          <Link href="https://www.youtube.com/fatihdelice?sub_confirmation=1">
             <a target="_blank" className=" cursor-ne-resize  font-bold">YouTube.</a>
           </Link>
         </p>

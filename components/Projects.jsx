@@ -2,7 +2,9 @@ import projects from "../util/projects.jsx";
 import Image from "next/image.js";
 import classNames from "../util/classNames.jsx";
 import Link from "next/link";
-import { HiOutlineExternalLink, HiCode } from "react-icons/hi";
+import { SiAppstore} from "react-icons/si";
+import { FaGooglePlay } from "react-icons/fa";
+
 
 const Projects = () => {
   return (
@@ -33,7 +35,7 @@ const Projects = () => {
                         "hover:bg-neutral-200   transition-all"
                       )}>
 
-                      <HiCode size={19} color="black" />
+                      <SiAppstore size={19} color="black" />
 
                     </a>}
                     {project.live && <a
@@ -44,7 +46,7 @@ const Projects = () => {
                         "hover:bg-neutral-100 transition-all"
                       )}>
 
-                      <HiOutlineExternalLink size={19} color="black" />
+                      <FaGooglePlay size={19} color="black" />
 
                     </a>}
                   </div>
