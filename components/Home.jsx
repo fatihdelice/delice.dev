@@ -36,12 +36,12 @@ const Home = () => {
 
         <div className="flex flex-col">
           <h1 className="text-3xl  font-bold">Fatih Delice</h1>
-          <h4 className="opacity-50">Computer Engineer — Developer, Creator, Writer</h4>
+          <h4 className="opacity-50">Computer Engineer — Developer</h4>
         </div>
       </div>
       <article className="mt-10">
         <p>
-          Hey, I'm Fatih! I am a Computer Engineer, Developer, Creator. I love everything that include visuality and aesthetic. I am developing interfaces with popular technologies for mobile and web applications. Proficient in HTML, CSS, JavaScript; plus modern libraries and frameworks (React.js, React-Native, Next.js, Tailwind, SASS...). Possess working knowledge of Adobe Photoshop, Figma, Illustrator, Premiere.
+          Hey, I'm Fatih! I am a Computer Engineer, Developer. I love everything that include visuality and aesthetic. I am developing interfaces with popular technologies for mobile and web applications. Proficient in HTML, CSS, JavaScript; plus modern libraries and frameworks (React.js, React-Native, Next.js, Tailwind, SASS...). Possess working knowledge of Adobe Photoshop, Figma, Illustrator, Premiere.
         </p>
         <p>
           Find me on{" "}
