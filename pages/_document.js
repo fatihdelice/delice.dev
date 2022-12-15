@@ -12,7 +12,7 @@ export default function Document() {
         />
       </Head>
       <body
-        className="dark:bg-neutral-900 bg-neutral-100 h-screen
+        className="dark:bg-black bg-neutral-100 h-screen
        selection:bg-red-100/30 selection:text-red-500
        dark:selection:bg-red-300/10 dark:selection:text-red-400
        "
@@ -41,7 +41,6 @@ export default function Document() {
         </svg>
         <Main />
         <NextScript />
-        <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="fatihdelice" data-description="Support me on Buy me a coffee!" data-message="" data-color="#dd2a2a" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
       </body>
     </Html>
   );

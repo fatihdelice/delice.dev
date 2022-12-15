@@ -35,30 +35,47 @@ const Home = () => {
         </svg> */}
 
         <div className="flex flex-col">
-          <h1 className="text-3xl  font-bold">Fatih Delice</h1>
+          <h1 className="text-4xl  font-bold">Fatih Delice</h1>
           <h4 className="opacity-50">Computer Engineer — Developer</h4>
         </div>
       </div>
       <article className="mt-10">
-        <p>
-          Hey, I'm Fatih! I am a Computer Engineer, Developer. I love everything that include visuality and aesthetic. I am developing interfaces with popular technologies for mobile and web applications. Proficient in HTML, CSS, JavaScript; plus modern libraries and frameworks (React.js, React-Native, Next.js, Tailwind, SASS...). Possess working knowledge of Adobe Photoshop, Figma, Illustrator, Premiere.
+        <p className="opacity-70 text-base">
+          Hey, I am Fatih Delice, a Computer Engineer, Developer. I love everything that include visuality and aesthetic. I am developing interfaces with popular technologies for mobile and web applications. <br /><br />
+          Proficient in HTML, CSS, JavaScript; plus modern libraries and frameworks (React.js, React-Native, Next.js, Tailwind, SASS...). Possess working knowledge of Adobe Photoshop, Figma, Illustrator, Premiere.
         </p>
         <p>
-          Find me on{" "}
+          <span className="opacity-70">Find me on</span>{" "}
           <Link href="https://twitter.com/fatihdelice_">
-            <a target="_blank" className=" cursor-ne-resize  font-bold">Twitter,</a>
+            <a target="_blank" className=" cursor-ne-resize">Twitter,</a>
           </Link>{" "}
           <Link href="https://github.com/fatihdelice">
-            <a target="_blank" className=" cursor-ne-resize  font-bold  ">GitHub, </a>
+            <a target="_blank" className=" cursor-ne-resize">GitHub, </a>
           </Link>{" "}
           <Link href="https://www.linkedin.com/in/fatihdelice/">
-            <a target="_blank" className=" cursor-ne-resize  font-bold">LinkedIn,</a>
+            <a target="_blank" className=" cursor-ne-resize">LinkedIn,</a>
           </Link>{" "}
           <Link href="https://www.youtube.com/fatihdelice?sub_confirmation=1">
-            <a target="_blank" className=" cursor-ne-resize  font-bold">YouTube.</a>
+            <a target="_blank" className=" cursor-ne-resize">YouTube.</a>
+          </Link><br />
+
+          <span className="opacity-70">Mail me at</span>{" "}
+          <Link href="mailto:fatihdelice@outlook.com">
+            <a target="_blank" className=" cursor-ne-resize">fatihdelice@outlook.com.</a>
+          </Link><br />
+
+          <span className="opacity-70">Chat with the community at</span>{" "}
+          <Link href="https://discord.gg/TD6DxU95TN">
+            <a target="_blank" className=" cursor-ne-resize">my Discord Server.</a>
           </Link>
         </p>
-        <Link href="mailto:delicex58@gmail.com">
+        <p>
+          <span className="opacity-70">If you like my works, you can </span>{" "}
+          <Link href="https://www.buymeacoffee.com/fatihdelice">
+            <a target="_blank" className=" cursor-ne-resize">Buy Me a Coffee.</a>
+          </Link>
+        </p>
+        {/* <Link href="mailto:fatihdelice@outlook.com">
           <a
             className={classNames(
               "px-3 py-2 bg-red-500 inline-block text-white inset-x-6 font-bold my-3",
@@ -68,13 +85,13 @@ const Home = () => {
           >
             <span>[HIRE ME]</span>
           </a>
-        </Link>
+        </Link> */}
       </article>
       <style jsx>{`
         p {
-          margin-top: 20px;
-          line-height: 1.4;
-          font-size: 1.1rem;
+          margin-top: 30px;
+          line-height: 1.75;
+          font-size: 1rem;
         }
       `}</style>
     </div>
