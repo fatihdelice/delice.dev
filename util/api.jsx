@@ -1,4 +1,4 @@
-const projects = [
+export const projects = [
   {
     id: 3,
     name: "Wordaily App",
@@ -15,7 +15,6 @@ const projects = [
     description:
       "Hundreds of free background wallpapers for your phone.",
     image: "/projects/wallsdrobe-logo.png",
-    link: "",
     live: "https://play.google.com/store/apps/details?id=com.yigidosoft.wallsdrobe",
     tags: ["React Native", "Firebase"],
   },
@@ -25,10 +24,19 @@ const projects = [
     description:
       "Color your phone with Sivasspor Wallpapers app.",
     image: "/projects/sivasspor-wallpapers-logo.png",
-    link: "",
     live: "https://play.google.com/store/apps/details?id=com.mobiroller.mobi408693277272",
     tags: ["React Native", "Firebase"],
   },
 ];
 
-export default projects;
+
+export const npmpackages = [
+  {
+    id: 1,
+    name: "blog-reading-time",
+    description: "Helps you estimate how long an article will take to read.",
+    live: "https://www.npmjs.com/package/blog-reading-time",
+    tags: ["JavaScript"],
+  },
+];
+
