@@ -26,11 +26,11 @@ const Nav = () => {
       </Link>
       <ul className={classNames("inline-flex list-none font-bold ml-auto")}>
         <li></li>
-        <li>
+        {/* <li>
           <Link href="https://fatihdelice.medium.com/">
             <a target="_blank" className="headerHover mr-2">Blog</a>
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link href="/projects">
             <a className="headerHover mr-2">Projects</a>

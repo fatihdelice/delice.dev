@@ -58,6 +58,11 @@ const Home = () => {
           <Link href="https://www.youtube.com/fatihdelice?sub_confirmation=1">
             <a target="_blank" className=" cursor-ne-resize">YouTube.</a>
           </Link><br />
+          
+          <span className="opacity-70">You can read my articles on </span>{" "}
+          <Link href="https://fatihdelice.medium.com/">
+            <a target="_blank" className=" cursor-ne-resize">Medium.</a>
+          </Link><br />
 
           <span className="opacity-70">Mail me at</span>{" "}
           <Link href="mailto:fatihdelice@outlook.com">
