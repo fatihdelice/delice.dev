@@ -57,6 +57,10 @@ const Home = () => {
           </Link>{" "}
           <Link href="https://www.youtube.com/fatihdelice?sub_confirmation=1">
             <a target="_blank" className=" cursor-ne-resize">YouTube.</a>
+          </Link>{" "}
+          <span className="opacity-70">Maybe</span>{" "}
+          <Link href="https://instagram.com/delice.dev">
+            <a target="_blank" className=" cursor-ne-resize">Instagram.</a>
           </Link><br />
           
           <span className="opacity-70">You can read my articles on </span>{" "}
