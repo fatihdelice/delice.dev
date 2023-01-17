@@ -1,7 +1,7 @@
 const title = `Fatih Delice`;
 const description = `Fatih Delice; Computer Engineer — Developer`;
 const domain = `delice.dev`;
-const twitter = `@fatihdew`;
+const twitter = `@fatihdelice_`;
 const meta = `Computer Engineer, developer`;
 
 export const seo = {
