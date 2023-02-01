@@ -26,7 +26,7 @@ const Home = ({ user, repos }) => {
         ></iframe>
       </div>
       <header className="w-main-content max-w-full mv-0 mx-auto grid gap-2 sm:px-4 snap-center">
-        <div className="relative flex justify-end items-center min-h-half-avatar px-2 py-2">
+        <div className="relative flex justify-end items-center min-h-half-avatar gap-2 px-2 py-2">
           <img
             className="absolute top-0 transform bg-surface-4 -translate-y-1/2 left-2 sm:left-3 rounded-full aspect-square w-avatar border-4 border-text-1"
             src="https://avatars.githubusercontent.com/u/53579912?v=4"
@@ -35,6 +35,14 @@ const Home = ({ user, repos }) => {
             height="200"
             loading="eager"
           />
+          <a
+            href="mailto:fatihdelice@outlook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:no-underline border-transparent focus:border-text-1 outline-transparent focus-visible:border-text-1 hover:border-black dark:hover:border-white border-4 rounded-full text-fluid--1 flex gap-x-1 items-center text-white bg-red-600 px-3 py-1"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><g fill="none" stroke="#ddd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="m3 7l9 6l9-6"/></g></svg>
+          </a>
           <a
             href="https://www.youtube.com/fatihdelice?sub_confirmation=1"
             target="_blank"

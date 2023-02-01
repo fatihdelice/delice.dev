@@ -2,13 +2,13 @@ import Link from "../util/noScrollLink";
 
 const About = () => {
     return (
-        <article className="mt-10 w-main-content max-w-full mv-0 mx-auto grid sm:px-7 px-3 snap-center">
-            <p className="opacity-70 text-base">
+        <article className="mt-10 w-main-content max-w-full mv-0 mx-auto grid sm:px-7 px-3 snap-center text-fluid--1 text-text-4">
+            <p className="text-base">
                 Hey, I am Fatih Delice, a Computer Engineer, Developer. I love everything that include visuality and aesthetic. I am developing interfaces with popular technologies for mobile and web applications. <br /><br />
                 Proficient in HTML, CSS, JavaScript; plus modern libraries and frameworks (Angular.js, React.js, React-Native, Next.js, Tailwind, SASS...). Possess working knowledge of Adobe Photoshop, Figma, Illustrator, Premiere.
             </p>
             <p>
-                <span className="opacity-70">Find me on</span>{" "}
+                <span>Find me on</span>{" "}
                 <Link href="https://twitter.com/fatihdelice_">
                     <a target="_blank" className=" cursor-ne-resize">Twitter,</a>
                 </Link>{" "}
@@ -21,28 +21,28 @@ const About = () => {
                 <Link href="https://www.youtube.com/fatihdelice?sub_confirmation=1">
                     <a target="_blank" className=" cursor-ne-resize">YouTube.</a>
                 </Link>{" "}
-                <span className="opacity-70">Maybe</span>{" "}
+                <span>Maybe</span>{" "}
                 <Link href="https://instagram.com/delice.dev">
                     <a target="_blank" className=" cursor-ne-resize">Instagram.</a>
                 </Link><br />
 
-                <span className="opacity-70">You can read my articles on </span>{" "}
+                <span>You can read my articles on </span>{" "}
                 <Link href="https://fatihdelice.medium.com/">
                     <a target="_blank" className=" cursor-ne-resize">Medium.</a>
                 </Link><br />
 
-                <span className="opacity-70">Mail me at</span>{" "}
+                <span>Mail me at</span>{" "}
                 <Link href="mailto:fatihdelice@outlook.com">
                     <a target="_blank" className=" cursor-ne-resize">fatihdelice@outlook.com.</a>
                 </Link><br />
 
-                <span className="opacity-70">Chat with the community at</span>{" "}
+                <span>Chat with the community at</span>{" "}
                 <Link href="https://discord.gg/TD6DxU95TN">
                     <a target="_blank" className=" cursor-ne-resize">my Discord Server.</a>
                 </Link>
             </p>
             <p>
-                <span className="opacity-70">If you like my works, you can </span>{" "}
+                <span>If you like my works, you can </span>{" "}
                 <Link href="https://www.buymeacoffee.com/fatihdelice">
                     <a target="_blank" className=" cursor-ne-resize">Buy Me a Coffee.</a>
                 </Link>
@@ -59,11 +59,17 @@ const About = () => {
             </a>
           </Link> */}
 
-        <style jsx>{`
+            <style jsx>{`
             p {
                 margin-top: 30px;
                 line-height: 1.75;
                 font-size: 1rem;
+            }
+            .text-fluid--1 {
+              font-size: clamp(.83rem, calc(.78rem + .29vw), 1rem);
+            }
+            .text-text-4 {
+              color: #868e96;
             }
         `}</style>
         </article>
