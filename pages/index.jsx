@@ -3,6 +3,7 @@ import Head from "next/head";
 import Home from "../components/Home";
 import Layouts from "../components/Layouts";
 import About from "../components/About";
+import Tabs from "../components/Tabs";
 
 const Index = () => {
   return (
@@ -11,7 +12,7 @@ const Index = () => {
         <title>Fatih Delice — Computer Engineer, developer</title>
       </Head>
       <Home />
-      <About />
+      <Tabs />
       {/* <Projects /> */}
     </Layouts>
   );
