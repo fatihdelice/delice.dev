@@ -1,7 +1,8 @@
 import React from "react";
 import About from "./About";
+import Projects from "./Projects";
 
-const Tabs = () => {
+const Tabs = ({ repos }) => {
     const [openTab, setOpenTab] = React.useState(1);
     return (
         <>
@@ -81,9 +82,7 @@ const Tabs = () => {
                                     <About />
                                 </div>
                                 <div className={openTab === 3 ? "block" : "hidden"} id="link3">
-                                    <p>
-                                        Hello World!
-                                    </p>
+                                    <Projects repos={repos} />
                                 </div>
                             </div>
                         </div>

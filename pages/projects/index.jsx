@@ -24,7 +24,7 @@ export const getStaticProps = async () => {
 };
 
 const Projects = ({ user, repos }) => {
-  // console.log(user);
+  console.log(user);
   // console.log(repos);
 
   // sorted by updated date
