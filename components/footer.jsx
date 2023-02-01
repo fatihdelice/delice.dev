@@ -7,7 +7,7 @@ const footer = () => {
     <div
       className={classNames(
         "py-4 pl-3 text-xs opacity-80 text-slate-600",
-        "sm:pl-12",
+        "sm:pl-10",
         "",
         "dark:text-neutral-300 dark:opacity-40"
       )}

@@ -13,19 +13,18 @@ const Layouts = ({ children }) => {
     <div
       className={classNames(
         "relative flex justify-center z-10 mx-auto w-full px-0 pt-0",
-        "sm:max-w-screen-md sm:px-4 sm:pb-8 sm:pt-12 sm:mx-auto"
+        "sm:max-w-screen-sm sm:px-4 sm:pb-8 sm:mx-auto"
       )}
     >
-      <div
+      {/* <div
         className={classNames(
-          " h-20 z-1 rounded-3xl md:hidden xl:inline opacity-50 w-40 sm:w-[768px] top-0 absolute bg-gradient-to-r"
+          " h-20 z-1 rounded-3xl md:hidden xl:inline opacity-50 w-40 sm:w-[520px] top-0 absolute bg-gradient-to-r"
         )}
-      ></div>
-      <div className="fixed top-3 sm:top-6 z-30 w-full">
+      ></div> */}
+      <div className="fixed top-0 sm:top-0 z-30 w-full">
         <div
           className={classNames(
-            "w-full mx-auto px-[10px]",
-            "sm:max-w-screen-md sm:px-[35px]"
+            "w-full "
           )}
         >
           <Nav />
@@ -41,7 +40,7 @@ const Layouts = ({ children }) => {
           className={classNames(
             "relative my-4",
             "sm:px-12 sm:py-5 sm:pb-1",
-            "pt-12 px-3"
+            "sm:pt-12 pt-1 sm:px-3"
           )}
         >
           <motion.main

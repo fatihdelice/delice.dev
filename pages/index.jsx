@@ -1,7 +1,8 @@
 import Head from "next/head";
-import Projects from "../components/Projects";
+// import Projects from "../components/Projects";
 import Home from "../components/Home";
 import Layouts from "../components/Layouts";
+import About from "../components/About";
 
 const Index = () => {
   return (
@@ -10,7 +11,8 @@ const Index = () => {
         <title>Fatih Delice — Computer Engineer, developer</title>
       </Head>
       <Home />
-      <Projects />
+      <About />
+      {/* <Projects /> */}
     </Layouts>
   );
 };

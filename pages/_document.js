@@ -12,9 +12,9 @@ export default function Document() {
         />
       </Head>
       <body
-        className="dark:bg-black bg-neutral-100 h-screen
+        className="dark:bg-neutral-900 bg-neutral-100 h-screen
        selection:bg-red-100/30 selection:text-red-500
-       dark:selection:bg-red-300/10 dark:selection:text-red-400
+       dark:selection:bg-red-300/10 dark:selection:bg-red-600 dark:selection:text-white
        "
       >
         <svg
