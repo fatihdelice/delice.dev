@@ -28,7 +28,7 @@ const Home = ({ user, repos }) => {
       <header className="w-main-content max-w-full mv-0 mx-auto grid gap-2 sm:px-4 snap-center">
         <div className="relative flex justify-end items-center min-h-half-avatar px-2 py-2">
           <img
-            className="absolute top-0 transform bg-surface-4 -translate-y-1/2 left-2 sm:left-0 rounded-full aspect-square w-avatar border-4 border-text-1"
+            className="absolute top-0 transform bg-surface-4 -translate-y-1/2 left-2 sm:left-3 rounded-full aspect-square w-avatar border-4 border-text-1"
             src="https://avatars.githubusercontent.com/u/53579912?v=4"
             alt="Fatih Delice"
             width="200"
