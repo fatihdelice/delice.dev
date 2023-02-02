@@ -101,12 +101,4 @@ const Projects = ({ repos }) => {
   );
 };
 
-export const getServerSideProps = async () => {
-  const url = "https://api.github.com/users/fatihdelice/repos";
-  const res = await axios.get(url);
-  return {
-    props: { data: res.data.slice(0, 10) },
-  };
-}
-
 export default Projects;

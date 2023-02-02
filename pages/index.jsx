@@ -4,11 +4,12 @@ import Layouts from "../components/Layouts";
 import About from "../components/About";
 import Tabs from "../components/Tabs";
 
-export const getStaticProps = async () => {
-  const url = "https://api.github.com/users/";
+export const getServerSideProps = async () => {
+  const url = process.env.API_URL;
+  const username = process.env.GITHUB_USERNAME;
   const [userRes, repoRes] = await Promise.all([
-    fetch(url + "fatihdelice"),
-    fetch(url + "fatihdelice" + "/repos"),
+    fetch(url + username),
+    fetch(url + username + "/repos"),
   ]);
   const [user, repos] = await Promise.all([userRes.json(), repoRes.json()]);
   if (userRes.status !== 200 || repoRes.status !== 200) {
@@ -17,14 +18,16 @@ export const getStaticProps = async () => {
   return { props: { user, repos } };
 };
 
-const Index = ({repos}) => {
+const Index = ({ user, repos }) => {
+  const title = process.env.SITE_TITLE;
+  
   return (
     <Layouts>
       <Head>
-        <title>Fatih Delice — Computer Engineer, developer</title>
+        <title>{title}</title>
       </Head>
-      <Home />
-      <Tabs repos={repos}/>
+      <Home user={user} />
+      <Tabs repos={repos} />
     </Layouts>
   );
 };
