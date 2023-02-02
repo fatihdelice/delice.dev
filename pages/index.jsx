@@ -3,6 +3,7 @@ import Home from "../components/Home";
 import Layouts from "../components/Layouts";
 import About from "../components/About";
 import Tabs from "../components/Tabs";
+import { SITE_TITLE } from "../util/strings";
 
 export const getServerSideProps = async () => {
   const url = process.env.API_URL;
@@ -19,12 +20,11 @@ export const getServerSideProps = async () => {
 };
 
 const Index = ({ user, repos }) => {
-  const title = process.env.SITE_TITLE;
-  
+
   return (
     <Layouts>
       <Head>
-        <title>{title}</title>
+        <title>{SITE_TITLE}</title>
       </Head>
       <Home user={user} />
       <Tabs repos={repos} />

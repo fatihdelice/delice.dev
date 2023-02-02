@@ -7,7 +7,8 @@ import {
   CODEPEN_URL,
   GITHUB_URL,
   YOUTUBE_URL,
-  LINKEDIN_URL
+  LINKEDIN_URL,
+  COPYRIGHT
 } from "../util/strings";
 
 const footer = () => {
@@ -103,7 +104,7 @@ const footer = () => {
           </a>
         </div>
         <div>
-          delice &copy; <span>{`${new Date().getFullYear()}`}</span>
+          {COPYRIGHT} &copy; <span>{`${new Date().getFullYear()}`}</span>
         </div>
       </div>
     </footer>
