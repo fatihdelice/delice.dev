@@ -10,8 +10,8 @@ export const PROFILE_BUTTON_URL = "https://www.youtube.com/fatihdelice?sub_confi
 export const JOBS = "#OpenToWork";
 export const BIRTHDATE = "June 11th"
 export const JOINED_DATE = "Nov 2022";
-export const WEBSITE_URL = "/links";
-export const WEBSITE_TITLE = "/links";
+export const WEBSITE_URL = "https://play.google.com/store/apps/dev?id=4998248358292398038";
+export const WEBSITE_TITLE = "/apps";
 
 // Social Media Links
 export const INSTAGRAM_URL = "https://instagram.com/delice.dev";
