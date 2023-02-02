@@ -13,7 +13,7 @@ import axios from 'axios';
 
 const Projects = ({ repos }) => {
   // console.log(repos);
-  
+
   // sorted by updated date
   const [sort, setSort] = useState(true);
 
@@ -101,7 +101,7 @@ const Projects = ({ repos }) => {
   );
 };
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const url = "https://api.github.com/users/fatihdelice/repos";
   const res = await axios.get(url);
   return {
