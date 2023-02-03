@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const Card = ({ item, user }) => {
     return (
@@ -48,7 +48,8 @@ const Card = ({ item, user }) => {
                     </a>
                     <span className="text-text-4">•</span>
                     {item.publishedAt && (
-                        <time className="text-fluid--2 text-text-4">{item.publishedAt}</time>)}
+                        <time className="text-fluid--2 text-text-4">{item.publishedAt}</time>
+                    )}
                 </div>
                 {item.status && (
                     <div>
@@ -60,7 +61,9 @@ const Card = ({ item, user }) => {
                         </div>
                     </div>
                 )}
-                <div className='py-4 text-fluid--1 leading-5'>{item.feed_message}</div>
+                <div className='py-4 text-fluid--1 leading-5'>
+                    <p>{item.feed_message}</p>
+                </div>
                 {item.imageUrl && (
                     <picture>
                         <img className="rounded-lg" src={item.imageUrl} alt={item.imageTitle ? item.imageTitle : item.author_name} width="750" height="500" decoding="async" loading="lazy" />
