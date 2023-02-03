@@ -63,7 +63,7 @@ const Card = ({ item, user }) => {
                 <div className='py-4 text-fluid--1 leading-5'>{item.feed_message}</div>
                 {item.imageUrl && (
                     <picture>
-                        <img className="rounded-lg" src={item.imageUrl} alt={item.author_name} width="750" height="500" decoding="async" loading="lazy" />
+                        <img className="rounded-lg" src={item.imageUrl} alt={item.imageTitle ? item.imageTitle : item.author_name} width="750" height="500" decoding="async" loading="lazy" />
                     </picture>
                 )}
                 {item.location && (
