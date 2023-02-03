@@ -27,7 +27,7 @@ const Index = ({ user, repos }) => {
         <title>{SITE_TITLE}</title>
       </Head>
       <Home user={user} />
-      <Tabs repos={repos} />
+      <Tabs user={user} repos={repos} />
     </Layouts>
   );
 };
