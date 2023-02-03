@@ -103,6 +103,40 @@ const footer = () => {
             </svg>
           </a>
         </div>
+        <div
+          className={classNames(
+            "py-4 text-xs text-slate-600 text-center",
+            "",
+            "dark:text-gray-500"
+          )}
+        >
+          <div className="">
+            This site build with{" "}
+            <a href="https://nextjs.org/" target="_blank" className="link">
+              Next.Js,
+            </a>{" "}
+            <a href="https://tailwindcss.com/" target="_blank" className="link">
+              Tailwind CSS
+            </a>{" "}
+            and{" "}
+            <a href="https://tailwindcss.com/" target="_blank" className="link">
+              Vercel
+            </a>{" "}
+          </div>
+          <div>
+            Also, thank you. For inspiring {" "}
+            <a href="https://jhey.dev/" target="_blank" className="link underline text-black dark:text-white">
+              Jhey.dev
+            </a>{" "}
+            to code this site.
+          </div>
+          <div>
+            You can access the source codes of this website on{" "}
+            <a href="https://github.com/fatihdelice/delice.dev" target="_blank" className="link underline text-black dark:text-white">
+              Github.
+            </a>{" "}
+          </div>
+        </div>
         <div>
           {COPYRIGHT} &copy; <span>{`${new Date().getFullYear()}`}</span>
         </div>
