@@ -5,7 +5,7 @@ import About from "../components/About";
 import Tabs from "../components/Tabs";
 import { SITE_TITLE } from "../util/strings";
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const url = process.env.API_URL;
   const username = process.env.GITHUB_USERNAME;
   const [userRes, repoRes] = await Promise.all([
