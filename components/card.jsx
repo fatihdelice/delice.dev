@@ -46,7 +46,7 @@ const Card = ({ item, user }) => {
                     >
                         {item.author_name}
                     </a>
-                    <span>•</span>
+                    <span className="text-text-4">•</span>
                     {item.publishedAt && (
                         <time className="text-fluid--2 text-text-4">{item.publishedAt}</time>)}
                 </div>
