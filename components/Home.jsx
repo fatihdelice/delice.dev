@@ -16,12 +16,12 @@ const Home = ({ user }) => {
   return (
     <div className="mt-10">
       <div className="banner max-w-[100vw] transform relative left-1/2 -translate-x-1/2 aspect-[3/1] bg-surface-4">
-        <iframe
+        <img
           title={PROFILE_NAME}
-          className="w-full h-full"
+          className="w-full h-full object-cover object-center"
           loading="lazy"
-          src="https://cdpn.io/pen/debug/NWdNMBJ"
-        ></iframe>
+          src="/assets/img/banner.gif"
+        ></img>
       </div>
       <header className="w-main-content max-w-full mv-0 mx-auto grid gap-2 sm:px-4 snap-center">
         <div className="relative flex justify-end items-center min-h-half-avatar gap-2 px-2 py-2">
