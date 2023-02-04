@@ -20,7 +20,7 @@ const Home = ({ user }) => {
           title={PROFILE_NAME}
           className="w-full h-full"
           loading="lazy"
-          src="https://cdpn.io/pen/debug/qBygQLZ?authentication_hash=VGAWNoLPewor"
+          src="https://cdpn.io/pen/debug/NWdNMBJ"
         ></iframe>
       </div>
       <header className="w-main-content max-w-full mv-0 mx-auto grid gap-2 sm:px-4 snap-center">
