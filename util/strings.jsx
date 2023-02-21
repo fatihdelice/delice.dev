@@ -7,8 +7,10 @@ export const PROFILE_TITLE = "Computer Engineer — Developer";
 export const EMAIL = "fatihdelice@outlook.com";
 export const PROFILE_BUTTON_TITLE = "Subscribe";
 export const PROFILE_BUTTON_URL = "https://www.youtube.com/fatihdelice?sub_confirmation=1";
-export const JOBS = "#OpenToWork";
-export const BIRTHDATE = "June 11th"
+export const JOBS = "Frontend Developer";
+export const COMPANY = "@Enoca";
+export const COMPANY_URL = "https://www.enoca.com/";
+export const BIRTHDATE = "June 11th";
 export const JOINED_DATE = "Nov 2022";
 export const WEBSITE_URL = "https://play.google.com/store/apps/dev?id=4998248358292398038";
 export const WEBSITE_TITLE = "/apps";

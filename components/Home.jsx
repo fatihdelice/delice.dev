@@ -8,7 +8,9 @@ import {
   BIRTHDATE,
   JOINED_DATE,
   WEBSITE_URL,
-  WEBSITE_TITLE
+  WEBSITE_TITLE,
+  COMPANY,
+  COMPANY_URL
 } from "../util/strings";
 const Home = ({ user }) => {
 
@@ -70,7 +72,7 @@ const Home = ({ user }) => {
                   <path d="M3 15.055v-.684c.126.053.255.1.39.142 2.092.642 4.313.987 6.61.987 2.297 0 4.518-.345 6.61-.987.135-.041.264-.089.39-.142v.684c0 1.347-.985 2.53-2.363 2.686a41.454 41.454 0 01-9.274 0C3.985 17.585 3 16.402 3 15.055z"></path>
                 </svg>
                 <span className="whitespace-nowrap">
-                  <span>{JOBS}</span>
+                  <span>{JOBS} <a className="text-blue-700 font-bold" href={COMPANY_URL} target="_blank">{COMPANY}</a></span>
                 </span>
               </span>
               <span className="flex items-center gap-1">
