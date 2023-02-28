@@ -34,11 +34,6 @@ const About = () => {
                 <span>Mail me at</span>{" "}
                 <Link href="mailto:fatihdelice@outlook.com">
                     <a target="_blank" className=" cursor-ne-resize">fatihdelice@outlook.com.</a>
-                </Link><br />
-
-                <span>Chat with the community at</span>{" "}
-                <Link href="https://discord.gg/TD6DxU95TN">
-                    <a target="_blank" className=" cursor-ne-resize">my Discord Server.</a>
                 </Link>
             </p>
             <p className="mt-6">
