@@ -1,6 +1,4 @@
 import Link from "next/link";
-import Head from "next/head";
-import Layouts from "./Layouts";
 import { TbGitFork } from "react-icons/tb";
 import { FaSort } from "react-icons/fa";
 import { AiFillStar } from "react-icons/ai";
@@ -8,14 +6,37 @@ import TimeSpliter from "../util/TimeSpliter";
 import cx from "clsx";
 import classNames from "../util/classNames";
 import { useState } from "react";
-import axios from 'axios';
 
 
-const Projects = ({ repos }) => {
-  // console.log(repos);
+export const getStaticProps = async () => {
+  try {
+    const url = process.env.API_URL;
+    const username = process.env.GITHUB_USERNAME;
 
-  // sorted by updated date
+    const [userRes, repoRes] = await Promise.all([
+      fetch(url + username),
+      fetch(url + username + '/repos'),
+    ]);
+
+    if (!userRes.ok || !repoRes.ok) {
+      throw new Error('Failed to fetch data from the API.');
+    }
+
+    const [user, repos] = await Promise.all([userRes.json(), repoRes.json()]);
+
+    return { props: { user, repos } };
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    return { props: { user: null, repos: null } };
+  }
+};
+
+const Projects = ({ user, repos }) => {
   const [sort, setSort] = useState(true);
+
+  if (!repos) {
+    return <div className="flex justify-center items-center">Loading...</div>;
+  }
 
   repos.sort((a, b) => {
     if (sort) {
@@ -29,16 +50,10 @@ const Projects = ({ repos }) => {
   });
 
   const timeSplit = (x) => {
-    //delete T and Z and replace with " "
     const time = x.replace("T", " ").replace("Z", " ");
     const splitTime = time.split(" ");
-    // console.log(sliceTime);
     return splitTime[0];
   };
-
-  if (!repos) {
-    return <div className="flex justify-center items-center">Loading...</div>;
-  }
 
   return (
     <div>

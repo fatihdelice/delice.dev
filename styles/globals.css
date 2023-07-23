@@ -92,3 +92,29 @@ html {
   box-shadow: 0 -7px 11px rgba(33, 33, 33, 0.1) inset,
     0 7px 11px rgba(227, 227, 227, 0.1) inset;
 }
+
+.social-links{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.social-links a{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  font-weight: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(125,125,125,.3);
+  transition: border .3s ease-in-out;
+}
+
+.social-links a:hover{
+  border-bottom: 1px solid #bbb;
+}
+
+.social-links a svg{
+  width: 15px;
+  height: 15px;
+}

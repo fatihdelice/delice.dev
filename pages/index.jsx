@@ -1,8 +1,5 @@
 import Head from "next/head";
 import Home from "../components/Home";
-import Layouts from "../components/Layouts";
-import About from "../components/About";
-import Tabs from "../components/Tabs";
 import { SITE_TITLE } from "../util/strings";
 
 export const getStaticProps = async () => {
@@ -19,16 +16,15 @@ export const getStaticProps = async () => {
   return { props: { user, repos } };
 };
 
-const Index = ({ user, repos }) => {
+const Index = ({ user }) => {
 
   return (
-    <Layouts>
+    <>
       <Head>
         <title>{SITE_TITLE}</title>
       </Head>
       <Home user={user} />
-      <Tabs user={user} repos={repos} />
-    </Layouts>
+    </>
   );
 };
 

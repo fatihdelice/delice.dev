@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import Navbar from "../components/Navbar";
 
 export default function Document() {
   return (
@@ -12,35 +13,14 @@ export default function Document() {
         />
       </Head>
       <body
-        className="dark:bg-neutral-900 bg-neutral-100 h-screen
-       selection:bg-red-600 selection:text-white
-       dark:selection:bg-red-300/10 dark:selection:bg-red-600 dark:selection:text-white
-       "
+        className=""
       >
-        <svg
-          id="texture"
-          width="100%"
-          height="100%"
-          className="pointer-events-none fixed isolate z-50 opacity-40 mix-blend-soft-light"
-        >
-          <filter id="noise">
-            <feTurbulence
-              type="fractalNoise"
-              baseFrequency="1"
-              numOctaves="10"
-              stitchTiles="stitch"
-            ></feTurbulence>
-            //https://fecolormatrix.com/
-            <feColorMatrix
-              className="hidden dark:visible"
-              type="saturate"
-              values="0"
-            ></feColorMatrix>
-          </filter>
-          <rect width="100%" height="100%" filter="url(#noise)"></rect>
-        </svg>
-        <Main />
-        <NextScript />
+        <main className="antialiased max-w-3xl mb-40 flex flex-col md:flex-row mx-4 mt-8 md:mt-20 lg:mt-32 lg:mx-auto font-sans text-gray-200">
+          <Navbar />
+          <Main />
+          <NextScript />
+        </main>
+
       </body>
     </Html>
   );
