@@ -24,7 +24,7 @@ export const getStaticProps = async () => {
   }
 };
 
-const Feed = ({ user }) => {
+const Store = ({ user }) => {
   const filteredData = posts.filter(item => item.pinned === true);
   const restOfData = posts.filter(item => item.pinned !== true);
   return (
@@ -47,4 +47,4 @@ const Feed = ({ user }) => {
   )
 }
 
-export default Feed;
+export default Store;
