@@ -1,14 +1,15 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import clsx from 'clsx';
 import {
   ArrowIcon,
   GitHubIcon,
   TwitterIcon,
   YoutubeIcon,
-  JobsIcon,
+  SquareIcon,
   InstagramIcon,
   LinkedInIcon,
   DiscordIcon,
+  Buymeacoffee
 } from './icons';
 import {
   PROFILE_NAME,
@@ -39,45 +40,13 @@ export default function Home({ user }) {
       <p className="my-5 text-neutral-800 dark:text-[#bbb]">
         {SHORT_ABOUT}
       </p>
-      <div className="flex items-start md:items-center my-8 flex-col md:flex-row">
-        <Image
-          alt={PROFILE_NAME}
-          className="rounded-full grayscale"
-          src={user.avatar_url}
-          width={100}
-          height={100}
-          priority
-        />
-        <div className="mt-8 md:mt-0 ml-0 md:ml-6 space-y-2 text-neutral-500 dark:text-neutral-400">
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href={COMPANY_URL}
-            className="flex items-center gap-2"
-          >
-            <JobsIcon />
-            {COMPANY}
-          </a>
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href={GITHUB_URL}
-            className="flex items-center gap-2"
-          >
-            <GitHubIcon />
-            {GITHUB_USER_NAME}
-          </a>
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href={YOUTUBE_URL}
-            className="flex items-center gap-2"
-          >
-            <YoutubeIcon />
-            {YOUTUBE_USER_NAME}
-          </a>
-        </div>
-      </div>
+      <p className="mt-3 text-neutral-800 dark:text-[#bbb] flex">
+        Working at
+        <Link href={COMPANY_URL} className='flex items-center ml-2 jobs-logo gap-[1px] cursor-ne-resize text-white'>
+          <SquareIcon />
+          {COMPANY}
+        </Link>.
+      </p>
       <p className="mt-3 text-neutral-800 dark:text-[#bbb]">I love everything that include visuality and aesthetic. I am developing interfaces with popular technologies for mobile and web applications.
       </p>
       <p className="mt-3 text-neutral-800 dark:text-[#bbb]">
@@ -87,12 +56,19 @@ export default function Home({ user }) {
         <span className="text-neutral-800 dark:text-[#bbb]">You can read my articles on </span>{" "}
         <Link href="https://fatihdelice.medium.com/">
           Medium.
-        </Link><br />
-        <span className="text-neutral-800 dark:text-[#bbb]">If you like my works, you can </span>{" "}
-        <Link href="https://www.buymeacoffee.com/fatihdelice">
-          Buy Me a Coffee.
         </Link>
       </p>
+      <Link
+        href="https://www.buymeacoffee.com/fatihdelice"
+        className="mt-5 border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4 w-full"
+      >
+        <span className="grow">
+          If you like my works, you can Buy Me a Coffee.
+        </span>
+        <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-white dark:bg-zinc-600">
+          <Buymeacoffee />
+        </span>
+      </Link>
       <hr className="w-12 my-12 mx-auto border-[#7d7d7d]" />
       <p className="text-neutral-800 dark:text-[#bbb]">Find me on</p>
       <p className="mt-2 social-links gap-3">

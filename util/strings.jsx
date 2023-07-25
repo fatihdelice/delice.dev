@@ -6,7 +6,7 @@ export const PROFILE_NAME = "Fatih Delice";
 export const PROFILE_TITLE = "Computer Engineer — Developer";
 export const EMAIL = "fatihdelice@outlook.com";
 export const JOBS = "Frontend Developer";
-export const COMPANY = "@Enoca";
+export const COMPANY = "enoca";
 export const COMPANY_URL = "https://www.enoca.com/";
 export const PLAY_URL = "https://play.google.com/store/apps/dev?id=4998248358292398038";
 export const WEBSITE_TITLE = "/apps";

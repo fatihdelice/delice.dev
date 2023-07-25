@@ -53,7 +53,7 @@ const Card = ({ item, user }) => {
                 </div>
                 {item.status && (
                     <div>
-                        <div className="py-1 px-3 inline-flex items-center gap-1 bg-gray-300 dark:bg-gray-700 inline rounded-full">
+                        <div className="py-1 px-3 inline-flex items-center gap-1 bg-gray-300 dark:bg-gray-700 rounded-full">
                             <span role="img" alt="Status icon" aria-hidden="true">{item.status.icon}</span>
                             <span className="text-fluid--2 font-bold">
                                 {item.status.title}
