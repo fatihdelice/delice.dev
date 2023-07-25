@@ -170,3 +170,9 @@ export function StarIcon() {
     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z"></path></svg>
   );
 }
+
+export function PlayStoreIcon() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M3.61 1.814L13.793 12L3.611 22.186a.996.996 0 0 1-.61-.92V2.735a1 1 0 0 1 .609-.921ZM14.5 12.707l2.302 2.302l-10.937 6.333l8.635-8.635Zm3.199-3.198l2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.207 12l2.492-2.491ZM5.865 2.658L16.803 8.99L14.5 11.293L5.865 2.658Z"></path></svg>
+  );
+}
