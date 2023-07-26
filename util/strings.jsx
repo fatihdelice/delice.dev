@@ -8,8 +8,6 @@ export const EMAIL = "fatihdelice@outlook.com";
 export const JOBS = "Frontend Developer";
 export const COMPANY = "enoca";
 export const COMPANY_URL = "https://www.enoca.com/";
-export const PLAY_URL = "https://play.google.com/store/apps/dev?id=4998248358292398038";
-export const WEBSITE_TITLE = "/apps";
 export const SHORT_ABOUT = "Hey, I am Fatih Delice, a computer engineer, developer.";
 
 // Social Media Links
@@ -25,6 +23,7 @@ export const YOUTUBE_URL = "https://www.youtube.com/fatihdelice?sub_confirmation
 export const MEDIUM_URL = "https://fatihdelice.medium.com/";
 export const CODEPEN_URL = "https://codepen.io/fatih-delice";
 export const DISCORD_URL = "https://discord.gg/TD6DxU95TN";
+export const PLAY_URL = "https://play.google.com/store/apps/dev?id=4998248358292398038";
 
 // Copyright
 export const COPYRIGHT = "delice";

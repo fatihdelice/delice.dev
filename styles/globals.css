@@ -110,7 +110,7 @@ html {
   gap: 6px;
   font-weight: inherit;
   text-decoration: none;
-  border-bottom: 1px solid rgba(125, 125, 125, .3);
+  border-bottom: 1px solid rgba(125, 125, 125, 0.3);
   transition: border .3s ease-in-out;
 }
 
@@ -119,8 +119,8 @@ html {
 }
 
 .social-links a svg {
-  width: 15px;
-  height: 15px;
+  width: 17px;
+  height: 17px;
 }
 
 .jobs-logo {

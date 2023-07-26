@@ -1,9 +1,9 @@
-import Link from "../util/noScrollLink";
+import Link from "next/link";
 
 const error = () => {
   return (
-    <main className="w-96 flex justify-center">
-      <div>
+    <main className="flex justify-center">
+      <div className="w-full">
         <div className="font-semibold text-left uppercase text-6xl">
           404
         </div>
@@ -11,11 +11,11 @@ const error = () => {
           Nice to meet you!
         </div>
 
-        <Link href="/">
-          <div className="font-mono hover:underline no-underline opacity-50 hover:opacity-75 cursor-pointer font-normal text-left mt-12 text-xl">
+        <div className="mt-12">
+          <Link href="/" className="font-mono border-b hover:border-[#bbb] border-[#7d7d7d] text-neutral-800 dark:text-[#bbb] cursor-pointer font-normal text-left text-xl">
             cd ..
-          </div>
-        </Link>
+          </Link>
+        </div>
       </div>
     </main>
   );
