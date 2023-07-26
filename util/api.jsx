@@ -1,4 +1,4 @@
-export const posts = [
+export const playApps = [
   {
     _id: 3,
     appName: "Wallsdrobe",
@@ -7,7 +7,7 @@ export const posts = [
     imageUrl: "/assets/img/wallsdrobe.webp",
     permaLink: "https://play.google.com/store/apps/details?id=com.yigidosoft.wallsdrobe",
     appCategory: "Personalization",
-    star: 5.0,
+    star: "5,0",
   },
   {
     _id: 2,
@@ -17,7 +17,7 @@ export const posts = [
     imageUrl: "/assets/img/wordaily.webp",
     permaLink: "https://play.google.com/store/apps/details?id=com.yigidosoft.wordaily",
     appCategory: "Puzzle",
-    star: 5.0,
+    star: "5,0",
   },
   {
     _id: 1,
@@ -27,7 +27,7 @@ export const posts = [
     imageUrl: "/assets/img/sivasspor-wallpapers.webp",
     permaLink: "https://play.google.com/store/apps/details?id=com.mobiroller.mobi408693277272",
     appCategory: "Personalization",
-    star: 4.9,
+    star: "4,9",
   }
 ];
 

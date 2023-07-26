@@ -35,7 +35,7 @@ export default function Home({ user }) {
 
 
   return (
-    <article className='w-main-content max-w-full w-full mv-0 mx-auto grid px-4 text-fluid--1 dark:text-text-4'>
+    <article className='w-main-content max-w-full w-full mv-0 mx-auto grid'>
       <h1 className="font-bold text-3xl">{PROFILE_NAME}</h1>
       <p className="my-5 text-neutral-800 dark:text-[#bbb]">
         {SHORT_ABOUT}
