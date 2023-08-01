@@ -10,6 +10,7 @@ import {
   DiscordIcon,
   Buymeacoffee,
   PlayStoreIcon,
+  GitHubSponsorsIcon,
 } from './icons';
 import {
   PROFILE_NAME,
@@ -18,6 +19,7 @@ import {
   SHORT_ABOUT,
   TWITTER_URL,
   GITHUB_URL,
+  GITHUB_SPONSORS_URL,
   EMAIL,
   LINKEDIN_URL,
   YOUTUBE_URL,
@@ -63,17 +65,7 @@ export default function Home({ user }) {
           </a>
         </li>
       </ul>
-      <Link
-        href="https://www.buymeacoffee.com/fatihdelice"
-        className="mt-5 border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded flex items-center justify-between px-3 py-4 w-full"
-      >
-        <span className="grow">
-          If you like my works, you can Buy Me a Coffee.
-        </span>
-        <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-white dark:bg-zinc-600">
-          <Buymeacoffee />
-        </span>
-      </Link>
+      <p className='mt-4 text-neutral-800 dark:text-[#bbb] flex flex-wrap gap-1'>If you enjoy my works, consider sponsoring me on  <a href={GITHUB_SPONSORS_URL} target="_blank" className='flex items-center gap-1'><GitHubSponsorsIcon /> GitHub Sponsor</a> or  <a href="https://www.buymeacoffee.com/fatihdelice" target="_blank">Buy Me a Coffee.</a></p>
       <hr className="w-12 my-12 mx-auto border-[#7d7d7d]" />
       <p className="text-neutral-800 dark:text-[#bbb]">Find me on</p>
       <p className="mt-2 social-links gap-3">

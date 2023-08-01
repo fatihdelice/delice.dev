@@ -16,6 +16,7 @@ export const TWITTER_USER_NAME = "fatihdelicetr";
 export const TWITTER_URL = "https://twitter.com/intent/follow?screen_name=fatihdelicetr";
 export const GITHUB_USER_NAME = "fatihdelice";
 export const GITHUB_URL = "https://github.com/fatihdelice";
+export const GITHUB_SPONSORS_URL = "https://github.com/sponsors/fatihdelice?o=esb";
 export const LINKEDIN_USER_NAME = "fatihdelice";
 export const LINKEDIN_URL = "https://www.linkedin.com/in/fatihdelice/";
 export const YOUTUBE_USER_NAME = "fatihdelice";

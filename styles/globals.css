@@ -103,7 +103,7 @@ html {
   align-items: center;
 }
 
-.social-links a {
+p a {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -114,11 +114,11 @@ html {
   transition: border .3s ease-in-out;
 }
 
-.social-links a:hover {
+p a:hover {
   border-bottom: 1px solid #bbb;
 }
 
-.social-links a svg {
+p a svg {
   width: 18px;
   height: 18px;
 }
