@@ -72,7 +72,7 @@ export default function Home({ user }) {
         <a href={GITHUB_URL} target="_blank"><GitHubIcon /> GitHub</a>
         <a href={LINKEDIN_URL} target="_blank"><LinkedInIcon /> LinkedIn</a>
         <a href={PLAY_URL} target="_blank"><PlayStoreIcon /> Play Store</a>
-        <a href={TWITTER_URL} target="_blank"><TwitterIcon /> Twitter</a>
+        <a href={TWITTER_URL} target="_blank"><TwitterIcon /> X</a>
         <a href={DISCORD_URL} target="_blank"><DiscordIcon /> Discord Server</a>
         <a href={YOUTUBE_URL} target="_blank"><YoutubeIcon></YoutubeIcon> YouTube</a>
         <a href={INSTAGRAM_URL} target="_blank"><InstagramIcon /> Instagram</a>
