@@ -6,7 +6,6 @@ import TimeSpliter from "../util/TimeSpliter";
 import cx from "clsx";
 import classNames from "../util/classNames";
 import { useState } from "react";
-import GitHubCalendar from "react-github-calendar";
 
 
 export const getStaticProps = async () => {
@@ -58,7 +57,6 @@ const Projects = ({ user, repos }) => {
 
   return (
     <div>
-      <GitHubCalendar />
       <div className="sm:columns-2 md:columns-3 space-y-5 ">
         <div
           className="text-center cursor-pointer"
