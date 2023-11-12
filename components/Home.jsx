@@ -65,7 +65,7 @@ export default function Home({ user }) {
           </a>
         </li>
       </ul>
-      <p className='mt-4 text-neutral-800 dark:text-[#bbb] flex flex-wrap gap-1'>If you enjoy my works, consider sponsoring me on  <a href={GITHUB_SPONSORS_URL} target="_blank" className='flex items-center gap-1'><GitHubSponsorsIcon /> GitHub Sponsor</a> or  <a href="https://www.buymeacoffee.com/fatihdelice" target="_blank">Buy Me a Coffee.</a></p>
+      <p className='mt-4 text-neutral-800 dark:text-[#bbb] flex flex-wrap gap-1'>If you enjoy my works, consider sponsoring me on  <a href={GITHUB_SPONSORS_URL} target="_blank" className='flex items-center gap-1'><GitHubSponsorsIcon /> GitHub Sponsor.</a></p>
       <hr className="w-12 my-12 mx-auto border-[#7d7d7d]" />
       <p className="text-neutral-800 dark:text-[#bbb]">Find me on</p>
       <p className="mt-2 social-links gap-3">
